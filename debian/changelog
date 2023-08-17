@@ -1,3 +1,12 @@
+gawk (1:5.1.0-1ubuntu0.1) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: integer overflow
+    - debian/patches/CVE-2023-4156.patch: prevent integer overflow
+      by adding check for negative size value in builtin.c.
+    - CVE-2023-4156
+
+ -- Fabian Toepfer <fabian.toepfer@canonical.com>  Thu, 17 Aug 2023 12:24:36 +0200
+
 gawk (1:5.1.0-1build3) jammy; urgency=medium
 
   * No-change rebuild for ppc64el baseline bump.
