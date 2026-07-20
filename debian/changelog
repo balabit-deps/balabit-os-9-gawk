@@ -1,3 +1,17 @@
+gawk (1:5.1.0-1ubuntu0.2) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: Use after free in io.c
+    - debian/patches/CVE-2026-40467.patch: Memory management fix in io.c
+    - CVE-2026-40467
+  * SECURITY UPDATE: Integer overflow in builtin.c.
+    - debian/patches/CVE-2026-40468.patch: Integer overflow fixes in builtin.c
+      and node.c
+    - debian/patches/CVE-2026-40469.patch: Add overflow checking in builtin.c
+    - CVE-2026-40468
+    - CVE-2026-40469
+
+ -- Kyle Kernick <kyle.kernick@canonical.com>  Mon, 20 Jul 2026 16:38:47 -0600
+
 gawk (1:5.1.0-1ubuntu0.1) jammy-security; urgency=medium
 
   * SECURITY UPDATE: integer overflow
